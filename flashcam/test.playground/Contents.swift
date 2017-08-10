@@ -2,7 +2,7 @@
 
 import UIKit
 
-let x = trasnmit(x: "ken")
+let x = trasnmit(x: "h")
 
 //for i in characters{
 //

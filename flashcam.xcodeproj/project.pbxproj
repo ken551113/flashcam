@@ -12,7 +12,7 @@
 		7319D59F1E9CB1E1003EFDEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7319D59D1E9CB1E1003EFDEE /* Main.storyboard */; };
 		7319D5A11E9CB1E1003EFDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7319D5A01E9CB1E1003EFDEE /* Assets.xcassets */; };
 		7319D5A41E9CB1E1003EFDEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7319D5A21E9CB1E1003EFDEE /* LaunchScreen.storyboard */; };
-		7319D5AC1E9CBAE6003EFDEE /* Transmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319D5AB1E9CBAE6003EFDEE /* Transmitter.swift */; };
+		7319D5AC1E9CBAE6003EFDEE /* stringConvertToBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319D5AB1E9CBAE6003EFDEE /* stringConvertToBinary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		7319D5A01E9CB1E1003EFDEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7319D5A31E9CB1E1003EFDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7319D5A51E9CB1E1003EFDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7319D5AB1E9CBAE6003EFDEE /* Transmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transmitter.swift; sourceTree = "<group>"; };
+		7319D5AB1E9CBAE6003EFDEE /* stringConvertToBinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringConvertToBinary.swift; sourceTree = "<group>"; };
 		7319D5AD1E9CC490003EFDEE /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				7319D5991E9CB1E1003EFDEE /* AppDelegate.swift */,
-				7319D5AB1E9CBAE6003EFDEE /* Transmitter.swift */,
+				7319D5AB1E9CBAE6003EFDEE /* stringConvertToBinary.swift */,
 				7319D59B1E9CB1E1003EFDEE /* ViewController.swift */,
 				7319D5AD1E9CC490003EFDEE /* test.playground */,
 				7319D59D1E9CB1E1003EFDEE /* Main.storyboard */,
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7319D5AC1E9CBAE6003EFDEE /* Transmitter.swift in Sources */,
+				7319D5AC1E9CBAE6003EFDEE /* stringConvertToBinary.swift in Sources */,
 				7319D59C1E9CB1E1003EFDEE /* ViewController.swift in Sources */,
 				7319D59A1E9CB1E1003EFDEE /* AppDelegate.swift in Sources */,
 			);
@@ -310,6 +310,7 @@
 				7319D5AA1E9CB1E1003EFDEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

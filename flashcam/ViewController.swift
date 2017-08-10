@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     //創建Video設備
     let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
-    
     //手電筒顯示狀態標識
     var isLightOn = true
     override func viewDidLoad() {
@@ -28,7 +27,8 @@ class ViewController: UIViewController {
     //捕獲點擊按鈕
  
     @IBAction func hahaha(_ sender: UIButton) {
-        let final = trasnmit(x : "k")
+        let tras = stringConvertToBinary()
+        let final = tras.trasnmit(x : "k")
 //        let hi = 0.04
         if device==nil{
             return
@@ -74,32 +74,4 @@ class ViewController: UIViewController {
     func off(){
         device?.torchMode = AVCaptureTorchMode.off
     }
-    
-    func trasnmit(x: String) -> Array<Character> {
-        let  y = toBinaryString(x: x)
-        var final = ""
-        for i in y {
-            let str = String(i, radix: 2)
-            let result = pad(string: str, toSize: 7)  // 00010110
-            final+=result
-        }
-        
-        let characters = Array(final.characters)
-        return characters
-    }
-    
-    
-    func toBinaryString(x :String) -> [UInt8] {
-        let buf = [UInt8](x.utf8)
-        return buf
-    }
-    
-    func pad(string : String, toSize: Int) -> String {
-        var padded = string
-        for _ in 0..<(toSize - string.characters.count) {
-            padded = "0" + padded
-        }
-        return padded
-    }
-
 }

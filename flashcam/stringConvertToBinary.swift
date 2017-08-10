@@ -7,13 +7,15 @@
 //
 import Foundation
 
-class transmitter{
+class stringConvertToBinary{
+    
     func trasnmit(x: String) -> Array<Character> {
         let  y = toBinaryString(x: x)
         var final = ""
+        
         for i in y {
             let str = String(i, radix: 2)
-            let result = pad(string: str, toSize: 8)  // 00010110
+            let result = pad(string: str, toSize: 7)  // 00010110
             final+=result
         }
         
@@ -22,6 +24,7 @@ class transmitter{
     }
     
     
+    //字串轉換成Uint8的陣列
     func toBinaryString(x :String) -> [UInt8] {
         let buf = [UInt8](x.utf8)
         return buf
@@ -58,12 +61,12 @@ class transmitter{
 //private String toBinaryString(String str) {
 //    String r = "";
 //    byte[] bytes = str.getBytes();
-//    
+//
 //    for (byte b : bytes) {
 //        r += String.format("%8s", Integer.toBinaryString(b)).replace(' ', '0');
 //    }
 //    return r;
-//    
+//
 //}
 //public Transmitter(Camera cam) {
 //    this.cam = cam;
